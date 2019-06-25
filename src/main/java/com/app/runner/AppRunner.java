@@ -31,10 +31,10 @@ public class AppRunner implements CommandLineRunner {
 	//long l=repo.count();
 		//System.out.println(l);
 		//System.out.println(repo.existsById(101));
-		//List<Employeeboot> list=repo.findAll();
-		/*
-		 * for (Employeeboot employeeboot : list) { System.out.println(employeeboot); }
-		 */
+		List<Employeeboot> list=repo.findAll();
+		
+		  for (Employeeboot employeeboot : list) { System.out.println(employeeboot); }
+		 
 		Optional<Employeeboot>f=repo.findById(1011);
 		System.out.println(f);
 		
